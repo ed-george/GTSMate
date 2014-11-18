@@ -5,11 +5,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import uk.co.edgeorgedev.gtsmate.utils.Logger;
 
-public class GTSUser {
-
+public class GTSUser{
+	
 	private String user_id;
 	private String account_id;
 	private String savedata_id;
+
+	private final static String VALID_GL_ID_REGEX = "[a-zA-Z]-[0-9]{3}-[0-9]{4}-[a-zA-Z]";
 
 	public GTSUser(String user_id, String account_id, String savedata_id) {
 		this.user_id = user_id;
@@ -40,8 +42,13 @@ public class GTSUser {
 		this.savedata_id = savedata_id;
 	}
 
-	public boolean isValid(){
+	public boolean containsFullData(){
 		return user_id != null && account_id != null && savedata_id != null; 
+	}
+	
+
+	public static boolean isValidGTSID(String code){
+		return code.matches(VALID_GL_ID_REGEX);
 	}
 
 	@Override
@@ -63,7 +70,7 @@ public class GTSUser {
 					Logger.w(getClass(), "Found unused var "+ var);
 				}
 			}
-			return isValid();
+			return containsFullData();
 		}else{
 			return false;
 		}

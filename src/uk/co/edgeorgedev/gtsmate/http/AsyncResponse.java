@@ -8,12 +8,14 @@
  */
 package uk.co.edgeorgedev.gtsmate.http;
 
+import org.apache.http.client.CookieStore;
+
 /**
  * @author edgeorge
  *
  */
 
 public interface AsyncResponse {	
-	void onSuccessResponse(String result, Response response, int id);
+	void onSuccessResponse(String result, Response response, int id, CookieStore cookies);
 	void onErrorResponse(String body, Response response, int id, Throwable e);
 }
