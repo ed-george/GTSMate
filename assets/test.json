@@ -1,0 +1,255 @@
+{
+    "status_code": "0000",
+    "totalCount": 288,
+    "tradeList": [
+        {
+            "tradeSavedata": {
+                "accountId": null,
+                "trainerName": "Blue",
+                "savedataId": null,
+                "trainerNameRuby": "Blue",
+                "memberSavedataIdCode": null,
+                "countryCode": "GBR",
+                "address": "England",
+                "country": "United Kingdom"
+            },
+            "tradePokemon": {
+                "waza1": {
+                    "typeName": "Normal",
+                    "name": "Mimic",
+                    "typeId": "1"
+                },
+                "waza2": {
+                    "typeName": "Normal",
+                    "name": "Slam",
+                    "typeId": "1"
+                },
+                "waza3": {
+                    "typeName": "Dark",
+                    "name": "Feint Attack",
+                    "typeId": "11"
+                },
+                "waza4": {
+                    "typeName": "Rock",
+                    "name": "Rock Tomb",
+                    "typeId": "15"
+                },
+                "tokusei": "Sturdy",
+                "monsno": 185,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 15,
+                "typeId2": 0,
+                "gender": 1,
+                "typeName1": "Rock",
+                "typeName2": "",
+                "ball": 8,
+                "name": "Sudowoodo",
+                "level": 25
+            },
+            "tradeDate": "2014/11/11 20:56:20",
+            "postSimple": {
+                "waza1": {
+                    "typeName": "Normal",
+                    "name": "Double Team",
+                    "typeId": "1"
+                },
+                "waza2": {
+                    "typeName": "Normal",
+                    "name": "Scary Face",
+                    "typeId": "1"
+                },
+                "waza3": {
+                    "typeName": "Flying",
+                    "name": "Pluck",
+                    "typeId": "6"
+                },
+                "waza4": {
+                    "typeName": "Rock",
+                    "name": "Ancient Power",
+                    "typeId": "15"
+                },
+                "tokusei": "Defeatist",
+                "monsno": 566,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 15,
+                "typeId2": 6,
+                "gender": 0,
+                "typeName1": "Rock",
+                "typeName2": "Flying",
+                "ball": 4,
+                "name": "Archen",
+                "level": 20
+            }
+        },
+        {
+            "tradeSavedata": {
+                "accountId": null,
+                "trainerName": "Jeffrey",
+                "savedataId": null,
+                "trainerNameRuby": "Jeffrey",
+                "memberSavedataIdCode": null,
+                "countryCode": "USA",
+                "address": "Florida",
+                "country": "United States"
+            },
+            "tradePokemon": {
+                "waza1": {
+                    "typeName": "Normal",
+                    "name": "Scratch",
+                    "typeId": "1"
+                },
+                "waza2": {
+                    "typeName": "Normal",
+                    "name": "Growl",
+                    "typeId": "1"
+                },
+                "waza3": {
+                    "typeName": null,
+                    "name": null,
+                    "typeId": "0"
+                },
+                "waza4": {
+                    "typeName": null,
+                    "name": null,
+                    "typeId": "0"
+                },
+                "tokusei": "Speed Boost",
+                "monsno": 255,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 3,
+                "typeId2": 0,
+                "gender": 0,
+                "typeName1": "Fire",
+                "typeName2": "",
+                "ball": 4,
+                "name": "Torchic",
+                "level": 1
+            },
+            "tradeDate": "2014/11/10 22:44:21",
+            "postSimple": {
+                "waza1": {
+                    "typeName": "Normal",
+                    "name": "Pound",
+                    "typeId": "1"
+                },
+                "waza2": {
+                    "typeName": "Poison",
+                    "name": "Poison Gas",
+                    "typeId": "9"
+                },
+                "waza3": {
+                    "typeName": "Ghost",
+                    "name": "Shadow Sneak",
+                    "typeId": "16"
+                },
+                "waza4": {
+                    "typeName": null,
+                    "name": null,
+                    "typeId": "0"
+                },
+                "tokusei": "Poison Touch",
+                "monsno": 88,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 9,
+                "typeId2": 0,
+                "gender": 1,
+                "typeName1": "Poison",
+                "typeName2": "",
+                "ball": 495,
+                "name": "Grimer",
+                "level": 1
+            }
+        },
+        {
+            "tradeSavedata": {
+                "accountId": null,
+                "trainerName": "Mark",
+                "savedataId": null,
+                "trainerNameRuby": "Mark",
+                "memberSavedataIdCode": null,
+                "countryCode": "CAN",
+                "address": "Alberta",
+                "country": "Canada"
+            },
+            "tradePokemon": {
+                "waza1": {
+                    "typeName": "Bug",
+                    "name": "X-Scissor",
+                    "typeId": "10"
+                },
+                "waza2": {
+                    "typeName": "Dark",
+                    "name": "Night Slash",
+                    "typeId": "11"
+                },
+                "waza3": {
+                    "typeName": "Normal",
+                    "name": "Double Hit",
+                    "typeId": "1"
+                },
+                "waza4": {
+                    "typeName": "Flying",
+                    "name": "Air Slash",
+                    "typeId": "6"
+                },
+                "tokusei": "Swarm",
+                "monsno": 123,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 10,
+                "typeId2": 6,
+                "gender": 0,
+                "typeName1": "Bug",
+                "typeName2": "Flying",
+                "ball": 2,
+                "name": "Scyther",
+                "level": 51
+            },
+            "tradeDate": "2014/11/10 22:42:47",
+            "postSimple": {
+                "waza1": {
+                    "typeName": "Normal",
+                    "name": "Double Team",
+                    "typeId": "1"
+                },
+                "waza2": {
+                    "typeName": "Normal",
+                    "name": "Scary Face",
+                    "typeId": "1"
+                },
+                "waza3": {
+                    "typeName": "Flying",
+                    "name": "Pluck",
+                    "typeId": "6"
+                },
+                "waza4": {
+                    "typeName": "Rock",
+                    "name": "Ancient Power",
+                    "typeId": "15"
+                },
+                "tokusei": "Defeatist",
+                "monsno": 566,
+                "formNo": "0",
+                "itemId": 0,
+                "itemName": "None",
+                "typeId1": 15,
+                "typeId2": 6,
+                "gender": 0,
+                "typeName1": "Rock",
+                "typeName2": "Flying",
+                "ball": 4,
+                "name": "Archen",
+                "level": 20
+            }
+        }
+    ]
+}
