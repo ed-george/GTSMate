@@ -2,6 +2,11 @@
 <resources>
 
     <string name="app_name">GTS Mate</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="user_id">Pokemon Global Link User ID</string>
+    <string name="example">G-446-3267-U</string>
+    <string name="submit">Submit</string>
+    <string name="invalid_gl_id">Sorry that GL ID is not valid</string>
+    <string name="gl_error">Sorry there was an error getting data from Global Link</string>
+    <string name="con_error">Please check your connection settings</string>
 
 </resources>
