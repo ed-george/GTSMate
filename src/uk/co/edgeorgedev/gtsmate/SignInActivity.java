@@ -127,6 +127,7 @@ public class SignInActivity extends Activity implements AsyncResponse {
 			GTSTradeList list = gson.fromJson(result, GTSTradeList.class);
 			if(!list.isError()){
 				Intent intent = new Intent(SignInActivity.this, TradeActivity.class);
+				intent.putExtra("list", result);
 				startActivity(intent);
 				overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 			}else{

@@ -1,5 +1,6 @@
 package uk.co.edgeorgedev.gtsmate;
 
+import uk.co.edgeorgedev.gtsmate.gts.GTSTradeList;
 import uk.co.edgeorgedev.gtsmate.ui.TradeAdapter;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -9,16 +10,25 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class TradeActivity extends BaseActivity {
 
 	private DrawerLayout mDrawerLayout;
 	private RecyclerView mRecyclerView;
 	private TradeAdapter mAdapter;
-
+	private GTSTradeList list;
+	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setActionBarIcon(R.drawable.ic_ab_drawer);
+		
+		Gson gson = new GsonBuilder().create();
+		String result = getIntent().getStringExtra("list");
+		list = gson.fromJson(result, GTSTradeList.class);
+		
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, Gravity.START);
 		
@@ -26,7 +36,7 @@ public class TradeActivity extends BaseActivity {
 		mRecyclerView.setHasFixedSize(true);
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 	
-		mAdapter = new TradeAdapter(new String[]{"Ed", "George", "Derp","Ed", "George", "Derp"});
+		mAdapter = new TradeAdapter(list);
         mRecyclerView.setAdapter(mAdapter);
 		
 	}
