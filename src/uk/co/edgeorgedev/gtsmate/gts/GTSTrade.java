@@ -51,11 +51,11 @@ public class GTSTrade {
 		this.tradePokemon = tradePokemon;
 	}
 
-	public Pokemon getPostSimple() {
+	public Pokemon getPostedPokemon() {
 		return postSimple;
 	}
 
-	public void setPostSimple(Pokemon postSimple) {
+	public void setPostedPokemon(Pokemon postSimple) {
 		this.postSimple = postSimple;
 	}
 	
