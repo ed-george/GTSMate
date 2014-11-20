@@ -22,29 +22,29 @@ public class Pokemon {
 	private String nature;
 	@Expose
 	@SerializedName("monsno")
-	private Integer dex;
+	private int dex;
 	@Expose
 	private String formNo;
 	@Expose
-	private Integer itemId;
+	private int itemId;
 	@Expose
 	private String itemName;
 	@Expose
-	private Integer typeId1;
+	private int typeId1;
 	@Expose
-	private Integer typeId2;
+	private int typeId2;
 	@Expose
-	private Integer gender;
+	private int gender;
 	@Expose
 	private String typeName1;
 	@Expose
 	private String typeName2;
 	@Expose
-	private Integer ball;
+	private int ball;
 	@Expose
 	private String name;
 	@Expose
-	private Integer level;
+	private int level;
 	public Move getMove1() {
 		return move1;
 	}
@@ -75,10 +75,10 @@ public class Pokemon {
 	public void setNature(String nature) {
 		this.nature = nature;
 	}
-	public Integer getDex() {
+	public int getDex() {
 		return dex;
 	}
-	public void setDex(Integer dex) {
+	public void setDex(int dex) {
 		this.dex = dex;
 	}
 	public String getFormNo() {
@@ -87,10 +87,10 @@ public class Pokemon {
 	public void setFormNo(String formNo) {
 		this.formNo = formNo;
 	}
-	public Integer getItemId() {
+	public int getItemId() {
 		return itemId;
 	}
-	public void setItemId(Integer itemId) {
+	public void setItemId(int itemId) {
 		this.itemId = itemId;
 	}
 	public String getItemName() {
@@ -99,22 +99,22 @@ public class Pokemon {
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public Integer getTypeId1() {
+	public int getTypeId1() {
 		return typeId1;
 	}
-	public void setTypeId1(Integer typeId1) {
+	public void setTypeId1(int typeId1) {
 		this.typeId1 = typeId1;
 	}
-	public Integer getTypeId2() {
+	public int getTypeId2() {
 		return typeId2;
 	}
-	public void setTypeId2(Integer typeId2) {
+	public void setTypeId2(int typeId2) {
 		this.typeId2 = typeId2;
 	}
-	public Integer getGender() {
+	public int getGender() {
 		return gender;
 	}
-	public void setGender(Integer gender) {
+	public void setGender(int gender) {
 		this.gender = gender;
 	}
 	public String getTypeName1() {
@@ -129,10 +129,10 @@ public class Pokemon {
 	public void setTypeName2(String typeName2) {
 		this.typeName2 = typeName2;
 	}
-	public Integer getBall() {
+	public int getBall() {
 		return ball;
 	}
-	public void setBall(Integer ball) {
+	public void setBall(int ball) {
 		this.ball = ball;
 	}
 	public String getName() {
@@ -141,11 +141,16 @@ public class Pokemon {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getLevel() {
+	public int getLevel() {
 		return level;
 	}
-	public void setLevel(Integer level) {
+	public void setLevel(int level) {
 		this.level = level;
+	}
+
+	@Override
+	public String toString() {
+		return name + " " + "Lv. " + Integer.toString(level);
 	}
 	
 	
