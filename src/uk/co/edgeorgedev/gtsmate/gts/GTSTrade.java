@@ -9,15 +9,23 @@ public class GTSTrade {
 	@Expose
 	private Pokemon tradePokemon;
 	@Expose
-	private Pokemon postSimple;
-	@Expose
 	private String tradeDate;
+	@Expose
+	private Pokemon postSimple;
 	
 	/**
 	 * @return the tradeDate
 	 */
 	public String getTradeDate() {
 		return tradeDate;
+	}
+	
+	public String getTradeDay() {
+		return tradeDate.split(" ")[0];
+	}
+	
+	public String getTradeTime() {
+		return tradeDate.split(" ")[1];
 	}
 
 	/**
