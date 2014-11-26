@@ -1,255 +1,836 @@
 {
-    "status_code": "0000",
-    "totalCount": 288,
-    "tradeList": [
-        {
-            "tradeSavedata": {
-                "accountId": null,
-                "trainerName": "Blue",
-                "savedataId": null,
-                "trainerNameRuby": "Blue",
-                "memberSavedataIdCode": null,
-                "countryCode": "GBR",
-                "address": "England",
-                "country": "United Kingdom"
+   "status_code":"0000",
+   "totalCount":293,
+   "tradeList":[
+      {
+         "tradeDate":"2014/11/16 15:26:05",
+         "postSimple":{
+            "typeName2":"Poison",
+            "typeName1":"Bug",
+            "monsno":167,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":10,
+            "typeId2":9,
+            "ball":496,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Baton Pass",
+               "typeId":"1"
             },
-            "tradePokemon": {
-                "waza1": {
-                    "typeName": "Normal",
-                    "name": "Mimic",
-                    "typeId": "1"
-                },
-                "waza2": {
-                    "typeName": "Normal",
-                    "name": "Slam",
-                    "typeId": "1"
-                },
-                "waza3": {
-                    "typeName": "Dark",
-                    "name": "Feint Attack",
-                    "typeId": "11"
-                },
-                "waza4": {
-                    "typeName": "Rock",
-                    "name": "Rock Tomb",
-                    "typeId": "15"
-                },
-                "tokusei": "Sturdy",
-                "monsno": 185,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 15,
-                "typeId2": 0,
-                "gender": 1,
-                "typeName1": "Rock",
-                "typeName2": "",
-                "ball": 8,
-                "name": "Sudowoodo",
-                "level": 25
+            "waza2":{
+               "typeName":"Dark",
+               "name":"Night Slash",
+               "typeId":"11"
             },
-            "tradeDate": "2014/11/11 20:56:20",
-            "postSimple": {
-                "waza1": {
-                    "typeName": "Normal",
-                    "name": "Double Team",
-                    "typeId": "1"
-                },
-                "waza2": {
-                    "typeName": "Normal",
-                    "name": "Scary Face",
-                    "typeId": "1"
-                },
-                "waza3": {
-                    "typeName": "Flying",
-                    "name": "Pluck",
-                    "typeId": "6"
-                },
-                "waza4": {
-                    "typeName": "Rock",
-                    "name": "Ancient Power",
-                    "typeId": "15"
-                },
-                "tokusei": "Defeatist",
-                "monsno": 566,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 15,
-                "typeId2": 6,
-                "gender": 0,
-                "typeName1": "Rock",
-                "typeName2": "Flying",
-                "ball": 4,
-                "name": "Archen",
-                "level": 20
-            }
-        },
-        {
-            "tradeSavedata": {
-                "accountId": null,
-                "trainerName": "Jeffrey",
-                "savedataId": null,
-                "trainerNameRuby": "Jeffrey",
-                "memberSavedataIdCode": null,
-                "countryCode": "USA",
-                "address": "Florida",
-                "country": "United States"
+            "waza3":{
+               "typeName":"Bug",
+               "name":"Megahorn",
+               "typeId":"10"
             },
-            "tradePokemon": {
-                "waza1": {
-                    "typeName": "Normal",
-                    "name": "Scratch",
-                    "typeId": "1"
-                },
-                "waza2": {
-                    "typeName": "Normal",
-                    "name": "Growl",
-                    "typeId": "1"
-                },
-                "waza3": {
-                    "typeName": null,
-                    "name": null,
-                    "typeId": "0"
-                },
-                "waza4": {
-                    "typeName": null,
-                    "name": null,
-                    "typeId": "0"
-                },
-                "tokusei": "Speed Boost",
-                "monsno": 255,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 3,
-                "typeId2": 0,
-                "gender": 0,
-                "typeName1": "Fire",
-                "typeName2": "",
-                "ball": 4,
-                "name": "Torchic",
-                "level": 1
+            "waza4":{
+               "typeName":"Poison",
+               "name":"Toxic Spikes",
+               "typeId":"9"
             },
-            "tradeDate": "2014/11/10 22:44:21",
-            "postSimple": {
-                "waza1": {
-                    "typeName": "Normal",
-                    "name": "Pound",
-                    "typeId": "1"
-                },
-                "waza2": {
-                    "typeName": "Poison",
-                    "name": "Poison Gas",
-                    "typeId": "9"
-                },
-                "waza3": {
-                    "typeName": "Ghost",
-                    "name": "Shadow Sneak",
-                    "typeId": "16"
-                },
-                "waza4": {
-                    "typeName": null,
-                    "name": null,
-                    "typeId": "0"
-                },
-                "tokusei": "Poison Touch",
-                "monsno": 88,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 9,
-                "typeId2": 0,
-                "gender": 1,
-                "typeName1": "Poison",
-                "typeName2": "",
-                "ball": 495,
-                "name": "Grimer",
-                "level": 1
-            }
-        },
-        {
-            "tradeSavedata": {
-                "accountId": null,
-                "trainerName": "Mark",
-                "savedataId": null,
-                "trainerNameRuby": "Mark",
-                "memberSavedataIdCode": null,
-                "countryCode": "CAN",
-                "address": "Alberta",
-                "country": "Canada"
+            "tokusei":"Swarm",
+            "name":"Spinarak",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":"c64c8230-8962-11e3-8a24-068eb59ba158",
+            "trainerName":"Nana",
+            "savedataId":"4dfb9750-4770-11e3-8bf3-068eb5b3a804",
+            "trainerNameRuby":"Nana",
+            "countryCode":"JPN",
+            "memberSavedataIdCode":"I-071-4330-Z",
+            "address":"Gifu",
+            "country":"Japan"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Grass",
+            "monsno":252,
+            "formNo":"0",
+            "itemId":271,
+            "itemName":"Power Herb",
+            "gender":0,
+            "typeId1":7,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Pound",
+               "typeId":"1"
             },
-            "tradePokemon": {
-                "waza1": {
-                    "typeName": "Bug",
-                    "name": "X-Scissor",
-                    "typeId": "10"
-                },
-                "waza2": {
-                    "typeName": "Dark",
-                    "name": "Night Slash",
-                    "typeId": "11"
-                },
-                "waza3": {
-                    "typeName": "Normal",
-                    "name": "Double Hit",
-                    "typeId": "1"
-                },
-                "waza4": {
-                    "typeName": "Flying",
-                    "name": "Air Slash",
-                    "typeId": "6"
-                },
-                "tokusei": "Swarm",
-                "monsno": 123,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 10,
-                "typeId2": 6,
-                "gender": 0,
-                "typeName1": "Bug",
-                "typeName2": "Flying",
-                "ball": 2,
-                "name": "Scyther",
-                "level": 51
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Leer",
+               "typeId":"1"
             },
-            "tradeDate": "2014/11/10 22:42:47",
-            "postSimple": {
-                "waza1": {
-                    "typeName": "Normal",
-                    "name": "Double Team",
-                    "typeId": "1"
-                },
-                "waza2": {
-                    "typeName": "Normal",
-                    "name": "Scary Face",
-                    "typeId": "1"
-                },
-                "waza3": {
-                    "typeName": "Flying",
-                    "name": "Pluck",
-                    "typeId": "6"
-                },
-                "waza4": {
-                    "typeName": "Rock",
-                    "name": "Ancient Power",
-                    "typeId": "15"
-                },
-                "tokusei": "Defeatist",
-                "monsno": 566,
-                "formNo": "0",
-                "itemId": 0,
-                "itemName": "None",
-                "typeId1": 15,
-                "typeId2": 6,
-                "gender": 0,
-                "typeName1": "Rock",
-                "typeName2": "Flying",
-                "ball": 4,
-                "name": "Archen",
-                "level": 20
-            }
-        }
-    ]
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Unburden",
+            "name":"Treecko",
+            "level":1
+         }
+      },
+      {
+         "tradeDate":"2014/11/16 15:16:59",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Normal",
+            "monsno":234,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":1,
+            "typeId2":0,
+            "ball":496,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Me First",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Tackle",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Disable",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Sap Sipper",
+            "name":"Stantler",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":"c3a93ea0-e6d8-11e3-aaf3-068eb5b1d4c6",
+            "trainerName":"Danglefrew",
+            "savedataId":"7b82aca0-e6d9-11e3-be6a-068eb5ad0ab9",
+            "trainerNameRuby":"Danglefrew",
+            "countryCode":"USA",
+            "memberSavedataIdCode":"J-100-9717-I",
+            "address":"Ohio",
+            "country":"United States"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Dragon",
+            "monsno":147,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":14,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Slam",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Extreme Speed",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Dragon",
+               "name":"Dragon Dance",
+               "typeId":"14"
+            },
+            "waza4":{
+               "typeName":"Psychic",
+               "name":"Agility",
+               "typeId":"13"
+            },
+            "tokusei":"Marvel Scale",
+            "name":"Dratini",
+            "level":25
+         }
+      },
+      {
+         "tradeDate":"2014/11/15 10:35:31",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Normal",
+            "monsno":234,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":1,
+            "typeId2":0,
+            "ball":496,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Me First",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Tackle",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Disable",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Sap Sipper",
+            "name":"Stantler",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":"1ba05070-7de9-11e3-9d04-068eb59ba158",
+            "trainerName":"Giovanni",
+            "savedataId":"2dec8090-6d8c-11e3-a0fa-068eb5ad0ab9",
+            "trainerNameRuby":"Giovanni",
+            "countryCode":"FRA",
+            "memberSavedataIdCode":"W-062-7088-F",
+            "address":"Île-de-France",
+            "country":"France"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Fighting",
+            "monsno":107,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":2,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Feint",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Helping Hand",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Fake Out",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":"Normal",
+               "name":"Foresight",
+               "typeId":"1"
+            },
+            "tokusei":"Iron Fist",
+            "name":"Hitmonchan",
+            "level":22
+         }
+      },
+      {
+         "tradeDate":"2014/11/15 10:33:55",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Normal",
+            "monsno":234,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":1,
+            "typeId2":0,
+            "ball":496,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Me First",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Tackle",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Disable",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Sap Sipper",
+            "name":"Stantler",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":"769131e0-3ff2-11e4-9a45-068eb5959c5f",
+            "trainerName":"Kirsten",
+            "savedataId":"422cb820-3ff2-11e4-8826-068eb5990048",
+            "trainerNameRuby":"Kirsten",
+            "countryCode":"NLD",
+            "memberSavedataIdCode":"F-432-7808-G",
+            "address":"Overijssel",
+            "country":"Netherlands"
+         },
+         "tradePokemon":{
+            "typeName2":"Poison",
+            "typeName1":"Grass",
+            "monsno":315,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":7,
+            "typeId2":9,
+            "ball":4,
+            "waza1":{
+               "typeName":"Grass",
+               "name":"Absorb",
+               "typeId":"7"
+            },
+            "waza2":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Poison Point",
+            "name":"Roselia",
+            "level":1
+         }
+      },
+      {
+         "tradeDate":"2014/11/12 00:54:22",
+         "postSimple":{
+            "typeName2":"Flying",
+            "typeName1":"Normal",
+            "monsno":16,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":1,
+            "typeId2":6,
+            "ball":10,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Tackle",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Keen Eye",
+            "name":"Pidgey",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":null,
+            "trainerName":"カイム",
+            "savedataId":null,
+            "trainerNameRuby":"kaimu",
+            "countryCode":"JPN",
+            "memberSavedataIdCode":null,
+            "address":"-",
+            "country":"Japan"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Grass",
+            "monsno":331,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":7,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Poison",
+               "name":"Poison Sting",
+               "typeId":"9"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Leer",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Water Absorb",
+            "name":"Cacnea",
+            "level":1
+         }
+      },
+      {
+         "tradeDate":"2014/11/11 20:56:20",
+         "postSimple":{
+            "typeName2":"Flying",
+            "typeName1":"Rock",
+            "monsno":566,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":15,
+            "typeId2":6,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Double Team",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Scary Face",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Flying",
+               "name":"Pluck",
+               "typeId":"6"
+            },
+            "waza4":{
+               "typeName":"Rock",
+               "name":"Ancient Power",
+               "typeId":"15"
+            },
+            "tokusei":"Defeatist",
+            "name":"Archen",
+            "level":20
+         },
+         "tradeSavedata":{
+            "accountId":null,
+            "trainerName":"Blue",
+            "savedataId":null,
+            "trainerNameRuby":"Blue",
+            "countryCode":"GBR",
+            "memberSavedataIdCode":null,
+            "address":"England",
+            "country":"United Kingdom"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Rock",
+            "monsno":185,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":15,
+            "typeId2":0,
+            "ball":8,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Mimic",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Slam",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Dark",
+               "name":"Feint Attack",
+               "typeId":"11"
+            },
+            "waza4":{
+               "typeName":"Rock",
+               "name":"Rock Tomb",
+               "typeId":"15"
+            },
+            "tokusei":"Sturdy",
+            "name":"Sudowoodo",
+            "level":25
+         }
+      },
+      {
+         "tradeDate":"2014/11/10 22:44:21",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Poison",
+            "monsno":88,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":9,
+            "typeId2":0,
+            "ball":495,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Pound",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Poison",
+               "name":"Poison Gas",
+               "typeId":"9"
+            },
+            "waza3":{
+               "typeName":"Ghost",
+               "name":"Shadow Sneak",
+               "typeId":"16"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Poison Touch",
+            "name":"Grimer",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":null,
+            "trainerName":"Jeffrey",
+            "savedataId":null,
+            "trainerNameRuby":"Jeffrey",
+            "countryCode":"USA",
+            "memberSavedataIdCode":null,
+            "address":"Florida",
+            "country":"United States"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Fire",
+            "monsno":255,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":3,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Scratch",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Growl",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Speed Boost",
+            "name":"Torchic",
+            "level":1
+         }
+      },
+      {
+         "tradeDate":"2014/11/10 22:42:47",
+         "postSimple":{
+            "typeName2":"Flying",
+            "typeName1":"Rock",
+            "monsno":566,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":15,
+            "typeId2":6,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Double Team",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Normal",
+               "name":"Scary Face",
+               "typeId":"1"
+            },
+            "waza3":{
+               "typeName":"Flying",
+               "name":"Pluck",
+               "typeId":"6"
+            },
+            "waza4":{
+               "typeName":"Rock",
+               "name":"Ancient Power",
+               "typeId":"15"
+            },
+            "tokusei":"Defeatist",
+            "name":"Archen",
+            "level":20
+         },
+         "tradeSavedata":{
+            "accountId":null,
+            "trainerName":"Mark",
+            "savedataId":null,
+            "trainerNameRuby":"Mark",
+            "countryCode":"CAN",
+            "memberSavedataIdCode":null,
+            "address":"Alberta",
+            "country":"Canada"
+         },
+         "tradePokemon":{
+            "typeName2":"Flying",
+            "typeName1":"Bug",
+            "monsno":123,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":10,
+            "typeId2":6,
+            "ball":2,
+            "waza1":{
+               "typeName":"Bug",
+               "name":"X-Scissor",
+               "typeId":"10"
+            },
+            "waza2":{
+               "typeName":"Dark",
+               "name":"Night Slash",
+               "typeId":"11"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Double Hit",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":"Flying",
+               "name":"Air Slash",
+               "typeId":"6"
+            },
+            "tokusei":"Swarm",
+            "name":"Scyther",
+            "level":51
+         }
+      },
+      {
+         "tradeDate":"2014/11/09 21:40:01",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Ice",
+            "monsno":613,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":4,
+            "typeId2":0,
+            "ball":9,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Bide",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Ice",
+               "name":"Icy Wind",
+               "typeId":"4"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Play Nice",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":"Normal",
+               "name":"Fury Swipes",
+               "typeId":"1"
+            },
+            "tokusei":"Snow Cloak",
+            "name":"Cubchoo",
+            "level":20
+         },
+         "tradeSavedata":{
+            "accountId":"ff0a6730-5ba9-11e4-82aa-068eb5959c5f",
+            "trainerName":"Trafalgar",
+            "savedataId":"a7e2ced0-5ba8-11e4-8dc0-068eb5ad0ab9",
+            "trainerNameRuby":"Trafalgar",
+            "countryCode":"ESP",
+            "memberSavedataIdCode":"D-430-0011-Z",
+            "address":"Castile-La Mancha",
+            "country":"Spain"
+         },
+         "tradePokemon":{
+            "typeName2":"Fire",
+            "typeName1":"Dark",
+            "monsno":228,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":11,
+            "typeId2":3,
+            "ball":4,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Leer",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Fire",
+               "name":"Ember",
+               "typeId":"3"
+            },
+            "waza3":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Flash Fire",
+            "name":"Houndour",
+            "level":1
+         }
+      },
+      {
+         "tradeDate":"2014/11/07 20:51:28",
+         "postSimple":{
+            "typeName2":"",
+            "typeName1":"Poison",
+            "monsno":88,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":1,
+            "typeId1":9,
+            "typeId2":0,
+            "ball":495,
+            "waza1":{
+               "typeName":"Normal",
+               "name":"Pound",
+               "typeId":"1"
+            },
+            "waza2":{
+               "typeName":"Poison",
+               "name":"Poison Gas",
+               "typeId":"9"
+            },
+            "waza3":{
+               "typeName":"Ghost",
+               "name":"Shadow Sneak",
+               "typeId":"16"
+            },
+            "waza4":{
+               "typeName":null,
+               "name":null,
+               "typeId":"0"
+            },
+            "tokusei":"Poison Touch",
+            "name":"Grimer",
+            "level":1
+         },
+         "tradeSavedata":{
+            "accountId":null,
+            "trainerName":"Nathan",
+            "savedataId":null,
+            "trainerNameRuby":"Nathan",
+            "countryCode":"GBR",
+            "memberSavedataIdCode":null,
+            "address":"England",
+            "country":"United Kingdom"
+         },
+         "tradePokemon":{
+            "typeName2":"",
+            "typeName1":"Fire",
+            "monsno":390,
+            "formNo":"0",
+            "itemId":0,
+            "itemName":"None",
+            "gender":0,
+            "typeId1":3,
+            "typeId2":0,
+            "ball":4,
+            "waza1":{
+               "typeName":"Fighting",
+               "name":"Quick Guard",
+               "typeId":"2"
+            },
+            "waza2":{
+               "typeName":"Fire",
+               "name":"Fire Punch",
+               "typeId":"3"
+            },
+            "waza3":{
+               "typeName":"Normal",
+               "name":"Fake Out",
+               "typeId":"1"
+            },
+            "waza4":{
+               "typeName":"Electric",
+               "name":"Thunder Punch",
+               "typeId":"5"
+            },
+            "tokusei":"Iron Fist",
+            "name":"Chimchar",
+            "level":1
+         }
+      }
+   ]
 }
