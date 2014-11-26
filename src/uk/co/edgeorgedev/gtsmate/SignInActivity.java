@@ -43,7 +43,7 @@ public class SignInActivity extends Activity implements AsyncResponse {
 		}
 
 		setContentView(R.layout.sign_in_screen);
-
+		
 		mUserIdEditTxt = (EditText) findViewById(R.id.sign_in_username);
 
 		mSignIn = (Button) findViewById(R.id.log_in_submit_button);
@@ -90,12 +90,12 @@ public class SignInActivity extends Activity implements AsyncResponse {
 			
 			Logger.d(getClass(), "SECRET_CRED");
 			
-			//if(user.getSecretCredentials(result)){
+			if(user.getSecretCredentials(result)){
 				ApiHelper.getTrade(this, user, cookies).execute();
-			//}else{
-			//	hideLoader();
-			//	Toast.makeText(getApplicationContext(), R.string.gl_error, Toast.LENGTH_LONG).show();
-			//}
+			}else{
+				hideLoader();
+				Toast.makeText(getApplicationContext(), R.string.gl_error, Toast.LENGTH_LONG).show();
+			}
 
 
 			break;
