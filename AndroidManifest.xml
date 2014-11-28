@@ -18,21 +18,22 @@
         <activity
             android:name=".SignInActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-             >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name=".TradeActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            />
-       
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SettingsAppTheme"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
