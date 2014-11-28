@@ -12,10 +12,18 @@
         -->
     </style>
 
+    <style name="SettingsAppTheme" parent="AppTheme">
+        <item name="android:background">@color/pc_light_blue</item>
+    </style>
+
+
     <!-- Application theme. -->
     <style name="AppTheme.Base" parent="@style/Theme.AppCompat">
         <item name="colorPrimary">@color/pc_light_blue</item>
         <item name="colorPrimaryDark">@color/pc_blue</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlNormal">@color/pc_blue</item>
+        <item name="colorControlActivated">@color/white</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->

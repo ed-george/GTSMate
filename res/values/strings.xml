@@ -5,8 +5,25 @@
     <string name="user_id">Pokemon Global Link User ID</string>
     <string name="example">G-446-3267-U</string>
     <string name="submit">Submit</string>
+    <string name="share">Share</string>
     <string name="invalid_gl_id">Sorry that GL ID is not valid</string>
     <string name="gl_error">Sorry there was an error getting data from Global Link</string>
     <string name="con_error">Please check your connection settings</string>
 
+    <string name="notifications_settings">Notifications</string>
+    <string name="pref_allow_notifications">Receive Notifications</string>
+    <string name="pref_allow_notifications_summary">On successful trades, receive notifications to your device</string>
+    <string name="pref_notification_frequency">Notification Frequency</string>
+    <string name="pref_notification_frequency_summary">Set minimum time between notifications</string>
+    <string name="pref_notification_sound">Play Notification Sound</string>
+    <string name="pref_notification_sound_summary">Play sound on trade completed notification</string>
+    
+    <string-array name="menu_array">
+        <item>Settings</item>
+        <item>Trade History</item>
+        <item>Switch/Add Account</item>
+        <item>Contact Developer</item>
+        <item>More</item>
+    </string-array>
+    
 </resources>

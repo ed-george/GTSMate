@@ -4,13 +4,13 @@
     <!-- Pokechecker Branding  -->
     <color name="pc_background">#252525</color>
     <color name="pc_light_background">#3d3d3d</color>
-    <color name="pc_third_blue">#448AFF</color>
-    <color name="pc_light_blue">#2196F3</color>
-    <color name="pc_blue">#1976D2</color>
+    <color name="pc_third_blue">#2196F3</color>
+    <color name="pc_light_blue">#1976D2</color>
+    <color name="pc_blue">#1565C0</color>
     <color name="pc_checkbox_checked">#91C837</color>
     <color name="pc_checkbox_unchecked">#C24A4B</color>
     <color name="pc_checkbox_favourited">#FFFB0D</color>
-    
+    <color name="accent">#FFAB40</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     
