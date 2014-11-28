@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.content.res.Resources.NotFoundException;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -43,6 +44,8 @@ public class SignInActivity extends Activity implements AsyncResponse {
 		}
 
 		setContentView(R.layout.sign_in_screen);
+
+		PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 		
 		mUserIdEditTxt = (EditText) findViewById(R.id.sign_in_username);
 
@@ -87,9 +90,9 @@ public class SignInActivity extends Activity implements AsyncResponse {
 
 		switch(id){
 		case ApiHelper.SECRET_CRED:
-			
+
 			Logger.d(getClass(), "SECRET_CRED");
-			
+
 			if(user.getSecretCredentials(result)){
 				ApiHelper.getTrade(this, user, cookies).execute();
 			}else{
@@ -101,17 +104,17 @@ public class SignInActivity extends Activity implements AsyncResponse {
 			break;
 
 		case ApiHelper.GET_TRADES:
-			
+
 			Logger.d(getClass(), "GET_TRADES");
-			
+
 			//TODO: REMOVE--------------------
-			
+
 			if(cookies != null){
 				for(Cookie c : cookies.getCookies()){
 					Logger.w(getClass(), ApiHelper.formatCookie(c));
 				}
 			}
-			
+
 			try {
 				result = FileUtils.loadFileFromAssets(getApplicationContext(), "test.json");
 			} catch (NotFoundException e) {
@@ -119,9 +122,9 @@ public class SignInActivity extends Activity implements AsyncResponse {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			
+
 			//--------------------------------
-			
+
 			Gson gson = new GsonBuilder().create();	
 
 			GTSTradeList list = gson.fromJson(result, GTSTradeList.class);
@@ -137,9 +140,9 @@ public class SignInActivity extends Activity implements AsyncResponse {
 					Toast.makeText(getApplicationContext(), R.string.gl_error, Toast.LENGTH_SHORT).show();
 				}
 			}
-			
+
 			hideLoader();
-			
+
 			break;
 		}
 
