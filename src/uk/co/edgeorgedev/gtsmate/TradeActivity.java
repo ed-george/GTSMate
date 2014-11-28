@@ -2,6 +2,7 @@ package uk.co.edgeorgedev.gtsmate;
 
 import uk.co.edgeorgedev.gtsmate.gts.GTSTradeList;
 import uk.co.edgeorgedev.gtsmate.ui.TradeAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -61,6 +65,34 @@ public class TradeActivity extends BaseActivity {
 		}
 
 		return super.onOptionsItemSelected(item);
+	}
+
+	
+	@Override
+	protected OnItemClickListener getMenuAdapter() {
+		return new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				switch(position){
+				 default:
+					 startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+					 mDrawerLayout.closeDrawer(Gravity.START);
+					 break;
+				}
+			}
+		};
+	}
+
+
+	@Override
+	protected String[] getMenuLabels() {
+		return getResources().getStringArray(R.array.menu_array);
+	}
+
+
+	@Override
+	protected Integer[] getMenuIcons() {
+		return new Integer[]{R.drawable.ic_cog_white, R.drawable.ic_history_white, R.drawable.ic_account_multiple_white, R.drawable.ic_twitter_white, R.drawable.ic_heart_white};
 	}
 
 }
