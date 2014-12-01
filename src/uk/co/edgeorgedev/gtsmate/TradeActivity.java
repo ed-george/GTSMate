@@ -40,7 +40,7 @@ public class TradeActivity extends BaseActivity {
 		mRecyclerView.setHasFixedSize(true);
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 	
-		mAdapter = new TradeAdapter(list);
+		mAdapter = new TradeAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
 		
 	}

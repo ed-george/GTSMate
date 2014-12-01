@@ -3,17 +3,20 @@ package uk.co.edgeorgedev.gtsmate.ui;
 import uk.co.edgeorgedev.gtsmate.R;
 import uk.co.edgeorgedev.gtsmate.gts.GTSTrade;
 import uk.co.edgeorgedev.gtsmate.gts.GTSTradeList;
+import uk.co.edgeorgedev.gtsmate.utils.Pokeball;
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
 public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> {
     private GTSTradeList mDataset;
-
+    private Context ctx;
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
@@ -21,6 +24,7 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
         // each data item is just a string in this case
         public TextView mTrainerName, mTrainerRegion, mTradedPokeName, mRecievedPokeName, mTradeDate;
         public CardView mCardView;
+        public ImageView mSentBall, mRecievedBall;
         public ViewHolder(View mLayout) {
             super(mLayout);
             this.mTrainerName = (TextView) mLayout.findViewById(R.id.trader_name);
@@ -29,11 +33,14 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
             this.mRecievedPokeName = (TextView) mLayout.findViewById(R.id.recieved_pokemon_name);
             this.mTradeDate = (TextView) mLayout.findViewById(R.id.trade_date);
             this.mCardView = (CardView) mLayout.findViewById(R.id.card_view);
+            this.mSentBall = (ImageView) mLayout.findViewById(R.id.sent_ball);
+            this.mRecievedBall = (ImageView) mLayout.findViewById(R.id.recieved_ball);
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TradeAdapter(GTSTradeList list) {
+    public TradeAdapter(Context ctx, GTSTradeList list) {
+    	this.ctx = ctx;
         mDataset = list;
     }
 
@@ -54,6 +61,8 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
         holder.mTradedPokeName.setText(trade.getPostedPokemon().toString());
         holder.mTradeDate.setText(trade.getTradeDate());
         holder.mTrainerRegion.setText(trade.getTradeSavedata().getCountryCode());
+        holder.mSentBall.setImageResource(Pokeball.getBallFromNumber(trade.getPostedPokemon().getBall()).getImage(ctx));
+        holder.mRecievedBall.setImageResource(Pokeball.getBallFromNumber(trade.getTradePokemon().getBall()).getImage(ctx));
         holder.mCardView.setCardElevation(10.0f);
     }
 
