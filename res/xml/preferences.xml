@@ -14,12 +14,22 @@
             android:key="pref_key_notification_frequency"
             android:summary="@string/pref_notification_frequency_summary"
             android:title="@string/pref_notification_frequency" />
+
         <CheckBoxPreference
             android:defaultValue="true"
             android:dependency="pref_key_allow_notifications"
             android:key="pref_key_notification_sound"
             android:summary="@string/pref_notification_sound_summary"
             android:title="@string/pref_notification_sound" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_donate_settings"
+        android:title="@string/notifications_other" >
+         <Preference
+            android:key="pref_key_notification_donate"
+            android:summary="@string/pref_notification_donate_summary"
+            android:title="@string/pref_notification_donate" />
+        
     </PreferenceCategory>
 
 </PreferenceScreen>

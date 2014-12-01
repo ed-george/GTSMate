@@ -11,6 +11,9 @@
     <string name="con_error">Please check your connection settings</string>
 
     <string name="notifications_settings">Notifications</string>
+    <string name="notifications_other">Other</string>
+    <string name="pref_notification_donate">Donate</string>
+    <string name="pref_notification_donate_summary">Like the app? Buy the developer a coffee!</string>
     <string name="pref_allow_notifications">Receive Notifications</string>
     <string name="pref_allow_notifications_summary">On successful trades, receive notifications to your device</string>
     <string name="pref_notification_frequency">Notification Frequency</string>
