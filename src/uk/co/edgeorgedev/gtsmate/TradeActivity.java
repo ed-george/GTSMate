@@ -4,7 +4,11 @@ import uk.co.edgeorgedev.gtsmate.gts.GTSTradeList;
 import uk.co.edgeorgedev.gtsmate.ui.TradeAdapter;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -21,28 +25,44 @@ public class TradeActivity extends BaseActivity {
 
 	private DrawerLayout mDrawerLayout;
 	private RecyclerView mRecyclerView;
+	private SwipeRefreshLayout mContentView;
 	private TradeAdapter mAdapter;
 	private GTSTradeList list;
-	 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setActionBarIcon(R.drawable.ic_ab_drawer);
-		
+
 		Gson gson = new GsonBuilder().create();
 		String result = getIntent().getStringExtra("list");
 		list = gson.fromJson(result, GTSTradeList.class);
-		
+
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, Gravity.START);
-		
-		mRecyclerView = (RecyclerView) findViewById(R.id.list);
-		mRecyclerView.setHasFixedSize(true);
+
+		mContentView = (SwipeRefreshLayout) findViewById(R.id.trade_view);
+		mContentView.setColorSchemeResources(R.color.pc_third_blue);
+		mContentView.setOnRefreshListener(new OnRefreshListener() {
+
+			@Override
+			public void onRefresh() {			
+				new Handler().postDelayed(new Runnable() {
+					@Override public void run() {
+						mContentView.setRefreshing(false);
+					}
+				}, 5000);
+			}
+		});
+
+		mRecyclerView = (RecyclerView) findViewById(R.id.trade_list_view);
+		mRecyclerView.setHasFixedSize(false);
+		mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-	
+
 		mAdapter = new TradeAdapter(this, list);
-        mRecyclerView.setAdapter(mAdapter);
-		
+		mRecyclerView.setAdapter(mAdapter);
+
 	}
 
 	@Override
@@ -67,17 +87,17 @@ public class TradeActivity extends BaseActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	
+
 	@Override
 	protected OnItemClickListener getMenuAdapter() {
 		return new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				switch(position){
-				 default:
-					 startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
-					 mDrawerLayout.closeDrawer(Gravity.START);
-					 break;
+				default:
+					startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+					mDrawerLayout.closeDrawer(Gravity.START);
+					break;
 				}
 			}
 		};
@@ -94,5 +114,6 @@ public class TradeActivity extends BaseActivity {
 	protected Integer[] getMenuIcons() {
 		return new Integer[]{R.drawable.ic_cog_white, R.drawable.ic_history_white, R.drawable.ic_account_multiple_white, R.drawable.ic_twitter_white, R.drawable.ic_heart_white};
 	}
+
 
 }
