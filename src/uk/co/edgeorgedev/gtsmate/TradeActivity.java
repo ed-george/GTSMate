@@ -50,6 +50,10 @@ public class TradeActivity extends BaseActivity {
 				new Handler().postDelayed(new Runnable() {
 					@Override public void run() {
 						mContentView.setRefreshing(false);
+					
+							mAdapter.addToList(list.getTradeList().get(0), 0);
+							mRecyclerView.smoothScrollToPosition(0);
+						
 					}
 				}, 5000);
 			}
@@ -60,7 +64,7 @@ public class TradeActivity extends BaseActivity {
 		mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-		mAdapter = new TradeAdapter(this, list);
+		mAdapter = new TradeAdapter(this, list.getTradeList());
 		mRecyclerView.setAdapter(mAdapter);
 
 	}

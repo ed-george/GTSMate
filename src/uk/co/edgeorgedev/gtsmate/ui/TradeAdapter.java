@@ -1,10 +1,9 @@
 package uk.co.edgeorgedev.gtsmate.ui;
 
-import com.squareup.picasso.Picasso;
+import java.util.List;
 
 import uk.co.edgeorgedev.gtsmate.R;
 import uk.co.edgeorgedev.gtsmate.gts.GTSTrade;
-import uk.co.edgeorgedev.gtsmate.gts.GTSTradeList;
 import uk.co.edgeorgedev.gtsmate.utils.Gender;
 import uk.co.edgeorgedev.gtsmate.utils.Pokeball;
 import android.content.Context;
@@ -16,9 +15,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 
 public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> {
-    private GTSTradeList mDataset;
+    private List<GTSTrade> mDataset;
     private Context ctx;
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -47,7 +48,7 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TradeAdapter(Context ctx, GTSTradeList list) {
+    public TradeAdapter(Context ctx, List<GTSTrade> list) {
     	this.ctx = ctx;
         mDataset = list;
     }
@@ -63,7 +64,7 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
     // Replace the contents of a view (invoked by the layout manager)	
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-    	GTSTrade trade = mDataset.getTradeList().get(position);
+    	GTSTrade trade = mDataset.get(position);
         holder.mTrainerName.setText(trade.getTradeSavedata().getTrainerName());
         holder.mRecievedPokeName.setText(trade.getTradePokemon().toString());
         holder.mTradedPokeName.setText(trade.getPostedPokemon().toString());
@@ -88,6 +89,16 @@ public class TradeAdapter extends RecyclerView.Adapter<TradeAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        return mDataset.getTradeList().size();
+        return mDataset.size();
+    }
+    
+    public void addToList(GTSTrade name, int position) {
+        mDataset.add(position, name);
+        notifyItemInserted(position);
+    }
+     
+    public void removeItemFromList(int position) {
+    	mDataset.remove(position);
+        notifyItemRemoved(position);
     }
 }
