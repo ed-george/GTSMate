@@ -9,18 +9,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/pc_third_blue" >
-        
+        android:background="@color/pc_third_blue"
+        android:orientation="vertical" >
+
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/list"
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/trade_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".TradeActivity" />
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trade_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".TradeActivity" />
+        </android.support.v4.widget.SwipeRefreshLayout>
     </LinearLayout>
 
     <ListView

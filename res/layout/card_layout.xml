@@ -11,7 +11,7 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/card_size"
         android:layout_gravity="center"
         card_view:cardCornerRadius="4dp"
         card_view:cardUseCompatPadding="true" >
@@ -29,19 +29,21 @@
 
                 <ImageView
                     android:id="@+id/recieved_pokemon_image"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/logo" />
+                    android:src="@drawable/logo"
+                    android:scaleType="fitCenter" />
 
                 <ImageView
                     android:id="@+id/sent_pokemon_image"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignTop="@+id/recieved_pokemon_image"
-                    android:src="@drawable/logo" />
+                    android:src="@drawable/logo"
+                    android:scaleType="fitCenter"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -51,7 +53,7 @@
                     android:src="@drawable/trade_icon" />
 
                 <LinearLayout
-                    android:id="@+id/linearLayout1"
+                    android:id="@+id/pokemon_name_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
@@ -93,80 +95,79 @@
                     android:src="@drawable/logo" />
 
                 <ImageView
-                    android:id="@+id/sent_gender"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_below="@+id/linearLayout1"
-                    android:layout_toRightOf="@+id/sent_pokemon_image"
-                    android:src="@drawable/male" />
-
-                <ImageView
                     android:id="@+id/recieved_gender"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_alignTop="@+id/sent_gender"
                     android:layout_toLeftOf="@+id/recieved_pokemon_image"
                     android:src="@drawable/female" />
+
+                <ImageView
+                    android:id="@+id/sent_gender"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_above="@+id/sent_ball"
+                    android:layout_alignLeft="@+id/sent_ball"
+                    android:src="@drawable/male" />
             </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="bottom"
-                android:orientation="horizontal" >
+                android:layout_weight="2"
+                android:gravity="bottom" >
 
-                <TextView
+                <ImageView
+                    android:id="@+id/trader_image"
+                    android:layout_width="@dimen/trader_image_dimen"
+                    android:layout_height="@dimen/trader_image_dimen"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/trader_image"
+                    android:orientation="vertical"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:id="@+id/trader_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="end|bottom"
+                        android:singleLine="true"
+                        android:textColor="@color/material_blue_grey_800" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+                        
+                        <TextView
                     android:id="@+id/trade_date"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_weight="1"
                     android:singleLine="true"
                     android:textColor="@color/material_blue_grey_800"
                     android:textSize="12sp" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" >
-
-                    <ImageView
-                        android:id="@+id/trader_image"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true"
-                        android:src="@drawable/logo" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_toLeftOf="@+id/trader_image"
-                        android:orientation="vertical"
-                        android:paddingRight="8dp"
-                        android:paddingTop="4dp" >
-
-                        <TextView
-                            android:id="@+id/trader_name"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1"
-                            android:gravity="end|bottom"
-                            android:singleLine="true"
-                            android:textColor="@color/material_blue_grey_800" />
 
                         <TextView
                             android:id="@+id/trader_region"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
-                            android:layout_weight="2"
                             android:gravity="end|bottom"
+                            android:layout_weight="1"
                             android:textColor="@color/material_blue_grey_800"
                             android:textSize="12sp" />
                     </LinearLayout>
-                </RelativeLayout>
-            </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
