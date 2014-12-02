@@ -1,5 +1,8 @@
 package uk.co.edgeorgedev.gtsmate.gts;
 
+import uk.co.edgeorgedev.gtsmate.R;
+import android.content.Context;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -148,6 +151,11 @@ public class Pokemon {
 		this.level = level;
 	}
 
+	public int getImage(Context ctx){
+		int img = ctx.getResources().getIdentifier("poke_" + dex, "drawable", ctx.getPackageName());
+		return img == 0 ? R.drawable.logo : img;
+	}
+	
 	@Override
 	public String toString() {
 		return name + " " + "Lv. " + Integer.toString(level);
